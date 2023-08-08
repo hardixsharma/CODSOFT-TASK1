@@ -1,0 +1,121 @@
+:root{
+    --main-color:#bd7b2b;
+    --black:#13131a;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: 'roboto',sans-serif;
+    margin:0; padding:0;
+    box-sizing:border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .5s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background:url(../images/bg2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section{
+    padding:2rem 7%;
+}
+.heading{
+    text-align: center;
+    color:var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #ffff;
+    background: var(--main-color);
+}
+.btn:hover{
+    letter-spacing: .3rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position:fixed;
+    top: 0; left: 0; right: 0;
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .main h5{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color: #ffff;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ffff;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+}
+.about .row .image{
+    flex:1 1 45rem;
+}
+.about .row .image img{
+    width: 100%
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:#ffff;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height:1.8;
+}
+.footer{
+    text-align: center;
+}
+.footer .credit{
+    font-size: 2rem;
+    color:#ffff;
+    font-weight: bold;
+    padding: 1.5rem;
+    border-bottom: var(--border);
+}
